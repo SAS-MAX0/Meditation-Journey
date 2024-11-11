@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditation Relaxation</title>
+    <link rel="stylesheet" href="m.css" />
+</head>
+<body>
+    <h1>RELAX</h1>
+
+    <!-- Music Play Button -->
+    <button id="play-music-btn">Start Music</button>
+    <button id="pause-music-btn">Pause Music</button>
+
+    <!-- Background Music (m.wav) -->
+    <audio id="background-music" loop>
+        <source src="assets/audio/1.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Volume Control -->
+    <div class="volume-control">
+        <label for="volume-control">Volume: </label>
+        <input
+            type="range"
+            id="volume-control"
+            min="0"
+            max="1"
+            step="0.1"
+            value="0.5"
+        />
+    </div>
+
+    <!-- Meditation Animation Container -->
+    <div class="container" id="container">
+        <div class="circle"></div>
+        <p id="text"></p>
+        <div class="pointer-container">
+            <span class="pointer"></span>
+        </div>
+        <div class="gradient-circle"></div>
+    </div>
+
+    <!-- Canvas for Particle Animation -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Music Credit -->
+    <p>
+        Music provided by <a href="https://www.pond5.com/royalty-free-music/item/143993540-meditation-balinese" target="_blank">FBSantosoMusic</a>, from <a href="https://www.pond5.com/" target="_blank">Pond5</a>.
+    </p>
+
+    <script src="m.js"></script>
+</body>
+</html>

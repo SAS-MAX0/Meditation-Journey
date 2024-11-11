@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slideshow</title>
+  <link rel="stylesheet" href="ss.css">
+</head>
+<body>
+
+  <!-- Category Selection -->
+  <div class="category-selection">
+    <h1>Pick Your Slideshow Category</h1>
+    <label for="category">Choose Category: </label>
+    <select id="category">
+      <option value="nature">Nature</option>
+      <option value="beach">Beach</option>
+      <option value="mountain">Mountain</option>
+      <option value="forest">Forest</option>
+      <option value="city">City</option>
+      <option value="technology">Technology</option>
+    </select>
+    <button id="start-btn">Start Slideshow</button>
+  </div>
+
+  <!-- Slideshow Container -->
+  <div id="slideshow-container" class="hidden">
+    <img id="slideshow-image" src="" alt="Slideshow" />
+  </div>
+
+  <!-- Controls -->
+  <div class="controls hidden">
+    <button id="prev-btn">Prev</button>
+    <button id="next-btn">Next</button>
+    <label for="interval">Slide Interval (seconds): </label>
+    <input type="number" id="interval" value="1" min="1">
+    <button id="cancel-btn">Cancel</button>
+  </div>
+  
+  <audio id="background-audio" autoplay loop style="display: none;">
+    <source src="assets/audio/1.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <script src="ss.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search App</title>
+    <link rel="stylesheet" href="img.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Search</h1>
+        <p>Click on images to enlarge</p>
+        <p>Search for nature, beach, cars, etc....</p>
+        
+        <input type="text" id="search-input" placeholder="Search for images...">
+        
+        <button id="search-button">Search</button>
+        
+        <div id="image-results" class="image-results"></div>
+        <button id="button"><a href="index.html">Back</a></button>
+        <button id="show-more-button" class="hidden">Show More</button>
+    </div>
+    <div id="modal" class="modal hidden">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
